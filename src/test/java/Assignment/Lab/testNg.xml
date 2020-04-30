@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Assigment" parallel="tests" thread-count="3"
+	verbose="1">
+	<listeners>
+		<listener class-name="Assignment.Lab.ScreenshotListener" />
+	</listeners>
+	<test name="Tests on Chrome">
+		<classes>
+			<class name="Assignment.Lab.TestScenarios" />
+		</classes>
+	</test>
+</suite>
