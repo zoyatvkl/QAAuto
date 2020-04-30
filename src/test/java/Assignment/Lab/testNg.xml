@@ -5,7 +5,7 @@
 		<listener class-name="Assignment.Lab.ScreenshotListener" />
 	</listeners>
 	<test name="Login Tests on Chrome">
-		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="Browser" value="chrome"></parameter>
 		<parameter name="DriverPath" value="chromeDriverPath"></parameter>
 		<classes>
 			<class name="Assignment.Lab.TestScenarios" />
