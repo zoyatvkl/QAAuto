@@ -11,6 +11,7 @@ public class TestScenarios {
 
 	@BeforeMethod(alwaysRun = true)
 	public void beforeTest() throws Exception {
+		//Add the driver path of the browser
 		SeleniumClient.instance().setBrowser("chrome", "");
 		SeleniumClient.instance().deleteBrowserCookies();
 		SeleniumClient.instance().getBrowser().get("https://www.saucedemo.com/index.html");
@@ -26,7 +27,7 @@ public class TestScenarios {
 	@Test
 	public void testScenario2() throws Exception {
 		Helper.instance().login("locked_out_user", "secret_sauce");
-		Helper.instance().verifyErrorMessage("Epic sadface: Sorry, this user has been locked out");
+		Helper.instance().verifyErrorMessage("Epic sadface: Sorry, this user has been locked out.");
 	} 
 
 	@Test
