@@ -1,11 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Test Assigment" parallel="tests" thread-count="3"
-	verbose="1">
+<suite name="Test Assigment" >
 	<listeners>
 		<listener class-name="Assignment.Lab.ScreenshotListener" />
 	</listeners>
-	<test name="Tests on Chrome">
+	<test name="Login Tests on Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="DriverPath" value="chromeDriverPath"></parameter>
+		<classes>
+			<class name="Assignment.Lab.TestScenarios" />
+		</classes>
+	</test>
+	<test name="Login Tests on firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="DriverPath" value="firefoxDriverPath"></parameter>
 		<classes>
 			<class name="Assignment.Lab.TestScenarios" />
 		</classes>
