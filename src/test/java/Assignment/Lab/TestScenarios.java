@@ -10,9 +10,9 @@ import org.testng.annotations.Test;
 public class TestScenarios {
 
 	@BeforeMethod(alwaysRun = true)
-	public void beforeTest() throws Exception {
-		//Add the driver path of the browser
-		SeleniumClient.instance().setBrowser("chrome", "");
+	@Parameters({"Browser", "DriverPath" })
+	public void beforeTest(String browser, String driverPath) throws Exception {
+		SeleniumClient.instance().setBrowser(browser, DriverPath);
 		SeleniumClient.instance().deleteBrowserCookies();
 		SeleniumClient.instance().getBrowser().get("https://www.saucedemo.com/index.html");
 	}
