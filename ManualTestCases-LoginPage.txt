@@ -1,0 +1,30 @@
+Functional - Performance Test cases;
+
+Verify if a user will be able to login with a valid username and valid password.
+Verify if a user cannot login with a valid username and an invalid password
+Verify the login page when both the field is blank and Submit button is clicked.
+Verify the error message, when a blocked user tries to login
+Verify the error when of the field is blank
+Verify login with different users, all accepted users should be in the range mentioned below the page
+Verify if you use "Standard" as a username, you will get error message;" Username do not match any user in this service"
+Verify if you use numbers in username field,you will get error message;" Username do not match any user in this service"
+Verify if you use symbols like *<&<^<%<$<#<@ in username field,you will get error message;" Username do not match any user in this service"
+Verify if you use password other than "secret_sauce" in the password field, you will get error message;"Password do not match any user in this service"
+Verify the login page for both, when the field is blank and Login button is clicked.
+Verify if you left password field blank, you will see error message; Epic sadface: Password is required
+Verify if the data in password field is either visible as asterisk or bullet signs.
+Verify if the login page allows to log in simultaneously with different credentials in a different browser.
+Verify if the ‘Enter’ key of the keyboard is working correctly on the login page.
+Verify the time taken to log in with a valid username and password. (Performance Testing)
+Verify if the font, text color, and color coding of the Login page is as per the standard.(UI Testing)
+Verify the login page and all its controls in different browsers. ( Browser Compatibility)
+
+Security Test cases;
+
+Verify if a user cannot enter the characters more than the specified range in each field (Username and Password).
+Verify if a user cannot enter the characters more than the specified range in each field (Username and Password).
+Verify the timeout functionality of the login session.
+Verify if a user should not be allowed to log in with different credentials from the same browser at the same time.
+Verify the Login page against SQL injection attack.
+Verify the implementation of SSL certificate.
+
