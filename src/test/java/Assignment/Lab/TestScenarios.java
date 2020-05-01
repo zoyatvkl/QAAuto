@@ -12,7 +12,7 @@ public class TestScenarios {
 	@BeforeMethod(alwaysRun = true)
 	@Parameters({"Browser", "DriverPath" })
 	public void beforeTest(String browser, String driverPath) throws Exception {
-		SeleniumClient.instance().setBrowser(browser, DriverPath);
+		SeleniumClient.instance().setBrowser(browser, driverPath);
 		SeleniumClient.instance().deleteBrowserCookies();
 		SeleniumClient.instance().getBrowser().get("https://www.saucedemo.com/index.html");
 	}
